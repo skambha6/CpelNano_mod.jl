@@ -16,6 +16,10 @@
 function get_αβ_from_ϕ(ϕ::Vector{Float64}, rs::RegStruct)::NTuple{2,Vector{Float64}}
 
     # Obtain full α & β vectors
+    a = rs.Nl[1]
+    b = ϕ[1]
+    c = rs.ρl[1]
+    
     α = [rs.Nl[l] * (ϕ[1] + ϕ[2] * rs.ρl[l]) for l = 1:rs.L]
     β = [ϕ[3] / rs.dl[l] for l = 1:(rs.L - 1)]
 

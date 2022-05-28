@@ -20,7 +20,7 @@ function get_αβ_from_ϕ(ϕ::Vector{Float64}, rs::RegStruct)::NTuple{2,Vector{F
     println(rs.chr)
     print("chrst: ")
     println(rs.chrst)
-    print('chrend: ")
+    print("chrend: ")
     println(rs.chrend)
     print("Nl: ")
     println(length(rs.Nl))
